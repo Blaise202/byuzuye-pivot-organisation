@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byuzuye Pivot Organization | Home</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'bpo-blue': '#2E5A88',
+              'bpo-green': '#5A8B43',
+              'bpo-light-blue': '#A9D4E5',
+              'bpo-light-gray': '#F0F4F8',
+            },
+          }
+        }
+      }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    <!-- Custom Styles for Fallbacks -->
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      .aspect-w-16 { position: relative; padding-bottom: 56.25%; }
+      .aspect-h-9 > * { position: absolute; height: 100%; width: 100%; top: 0; left: 0; }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white text-slate-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+              <a href="index.html" class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-bpo-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <span class="font-bold text-xl text-slate-800">Byuzuye Pivot</span>
+              </a>
+              <nav class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="font-semibold text-bpo-blue text-slate-600 hover:text-bpo-blue transition-colors duration-300">Home</a>
+                <a href="about.html" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">About Us</a>
+                <a href="what-we-do.html" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">What We Do</a>
+                <a href="blog.html" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Blog</a>
+                <a href="impact.html" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Impact</a>
+                <a href="get-involved.html" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Get Involved</a>
+                <a href="contact.html" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Contact</a>
+              </nav>
+              <div class="hidden lg:block">
+                <a href="donate.html" class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-green text-white hover:bg-bpo-green/90 focus:ring-bpo-green">Donate</a>
+              </div>
+              <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-slate-600 hover:text-bpo-blue focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="lg:hidden bg-white border-t border-slate-200 hidden">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+              <a href="index.html" class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 bg-bpo-light-blue text-bpo-blue">Home</a>
+              <a href="about.html" class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">About Us</a>
+              <a href="what-we-do.html" class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">What We Do</a>
+              <a href="blog.html" class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Blog</a>
+              <a href="impact.html" class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Impact</a>
+              <a href="get-involved.html" class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Get Involved</a>
+              <a href="contact.html" class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Contact</a>
+              <div class="pt-4">
+                <a href="donate.html" class="w-full inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-green text-white hover:bg-bpo-green/90 focus:ring-bpo-green">Donate</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <div class="relative bg-bpo-light-gray">
+              <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-8 items-center py-20 lg:py-32">
+                  <div class="text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 tracking-tight">
+                      A Journey to <span class="text-bpo-blue">Fullness</span> & <span class="text-bpo-green">Hope</span>.
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                      Byuzuye Pivot Organization is dedicated to restoring individuals living with mental health challenges through compassionate support, community, and empowerment.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                      <a href="get-involved.html" class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-green text-white hover:bg-bpo-green/90 focus:ring-bpo-green">Get Involved</a>
+                      <a href="donate.html" class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-blue text-white hover:bg-bpo-blue/90 focus:ring-bpo-blue">Donate Now</a>
+                    </div>
+                  </div>
+                  <div class="relative h-64 sm:h-80 lg:h-full">
+                    <img src="https://picsum.photos/seed/hero/1000/800" alt="Community support" class="rounded-xl shadow-2xl object-cover w-full h-full" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="bg-white py-20 sm:py-24">
+              <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                  <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Our Impact in Numbers</h2>
+                  <p class="mt-4 text-lg text-slate-600">Making a tangible difference in our community, one life at a time.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                  <div class="flex flex-col">
+                    <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">1,200+</span>
+                    <span class="mt-2 text-base text-slate-600">Individuals Supported</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">50+</span>
+                    <span class="mt-2 text-base text-slate-600">Support Groups Hosted</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">3,000+</span>
+                    <span class="mt-2 text-base text-slate-600">Community Members Reached</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">95%</span>
+                    <span class="mt-2 text-base text-slate-600">Reported Improved Well-being</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- What We Do Section -->
+            <div class="bg-bpo-light-gray py-20 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Restoring Hope, Building Futures</h2>
+                        <p class="mt-6 text-lg text-slate-600">
+                            We provide a holistic range of services designed to meet individuals where they are. From one-on-one counseling and peer support groups to skills training and community outreach, our programs are built on a foundation of empathy, respect, and evidence-based care.
+                        </p>
+                        <div class="mt-8">
+                            <a href="what-we-do.html" class="inline-flex items-center font-semibold text-bpo-green hover:text-bpo-green/80 transition-colors">
+                                Learn More About Our Programs
+                                <svg class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/seed/whatwedo/800/600" alt="A counseling session" class="rounded-xl shadow-lg"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Section -->
+            <div class="bg-white py-20 sm:py-24">
+              <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                  <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Stories & Resources</h2>
+                  <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Gain insights, find encouragement, and learn more about mental wellness from our blog.</p>
+                </div>
+                <div class="mt-16 grid gap-8 lg:grid-cols-3">
+                  <!-- Blog Post 1 -->
+                  <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col">
+                    <a href="blog/finding-hope-in-community.html" class="block">
+                      <img class="w-full h-56 object-cover" src="https://picsum.photos/seed/blog1/800/600" alt="Finding Hope and Healing in Community" />
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                      <div class="flex-grow">
+                        <p class="text-sm font-semibold text-bpo-green uppercase tracking-wide">Community Stories</p>
+                        <a href="blog/finding-hope-in-community.html" class="block mt-2">
+                          <h3 class="text-xl font-semibold text-slate-900 hover:text-bpo-blue">Finding Hope and Healing in Community</h3>
+                          <p class="mt-3 text-base text-slate-600">Discover how our community support groups are creating safe spaces for individuals to share, heal, and grow together.</p>
+                        </a>
+                      </div>
+                      <div class="mt-6 flex items-center">
+                        <div class="text-sm">
+                          <p class="font-medium text-slate-900">Jeanine Mukamana</p>
+                          <p class="text-slate-500">October 26, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Blog Post 2 -->
+                  <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col">
+                    <a href="blog/5-mindfulness-techniques.html" class="block">
+                      <img class="w-full h-56 object-cover" src="https://picsum.photos/seed/blog2/800/600" alt="5 Simple Mindfulness Techniques to Calm Your Mind" />
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                      <div class="flex-grow">
+                        <p class="text-sm font-semibold text-bpo-green uppercase tracking-wide">Mental Health Tips</p>
+                        <a href="blog/5-mindfulness-techniques.html" class="block mt-2">
+                          <h3 class="text-xl font-semibold text-slate-900 hover:text-bpo-blue">5 Simple Mindfulness Techniques to Calm Your Mind</h3>
+                          <p class="mt-3 text-base text-slate-600">Learn five practical and easy-to-implement mindfulness exercises that can help reduce stress and improve your mental clarity.</p>
+                        </a>
+                      </div>
+                      <div class="mt-6 flex items-center">
+                        <div class="text-sm">
+                          <p class="font-medium text-slate-900">Dr. Aimable Nsengimana</p>
+                          <p class="text-slate-500">September 15, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- Blog Post 3 -->
+                  <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col">
+                    <a href="blog/the-power-of-vulnerability.html" class="block">
+                      <img class="w-full h-56 object-cover" src="https://picsum.photos/seed/blog3/800/600" alt="The Power of Vulnerability in Mental Wellness" />
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                      <div class="flex-grow">
+                        <p class="text-sm font-semibold text-bpo-green uppercase tracking-wide">Insights</p>
+                        <a href="blog/the-power-of-vulnerability.html" class="block mt-2">
+                          <h3 class="text-xl font-semibold text-slate-900 hover:text-bpo-blue">The Power of Vulnerability in Mental Wellness</h3>
+                          <p class="mt-3 text-base text-slate-600">We explore why embracing vulnerability is not a sign of weakness, but a courageous step towards authentic connection and healing.</p>
+                        </a>
+                      </div>
+                      <div class="mt-6 flex items-center">
+                        <div class="text-sm">
+                          <p class="font-medium text-slate-900">Chantal Uwamahoro</p>
+                          <p class="text-slate-500">August 02, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="mt-12 text-center">
+                  <a href="blog.html" class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-blue text-white hover:bg-bpo-blue/90 focus:ring-bpo-blue">Visit Our Blog</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="bg-bpo-blue text-white py-20 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Voices of Our Community</h2>
+                    <div class="mt-12 grid md:grid-cols-3 gap-8">
+                        <blockquote class="bg-white/10 p-8 rounded-lg">
+                            <p class="text-lg italic text-bpo-light-blue">"BPO gave me a safe space to heal and a community that feels like family. I finally feel hopeful about my future."</p>
+                            <footer class="mt-4">
+                                <cite class="font-semibold not-italic">Annet</cite>
+                                <span class="block text-bpo-light-blue/80 text-sm">Program Participant</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="bg-white/10 p-8 rounded-lg">
+                            <p class="text-lg italic text-bpo-light-blue">"The work this organization does is truly life-changing. Volunteering with BPO has been one of the most rewarding experiences of my life."</p>
+                            <footer class="mt-4">
+                                <cite class="font-semibold not-italic">Peter</cite>
+                                <span class="block text-bpo-light-blue/80 text-sm">Volunteer</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="bg-white/10 p-8 rounded-lg">
+                            <p class="text-lg italic text-bpo-light-blue">"We are proud to partner with BPO. Their commitment to transparency and measurable impact ensures that our support makes a real difference in people's lives."</p>
+                            <footer class="mt-4">
+                                <cite class="font-semibold not-italic">Kigali Health Foundation</cite>
+                                <span class="block text-bpo-light-blue/80 text-sm">Partner Organization</span>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-bpo-blue text-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div>
+                <h3 class="font-bold text-lg">Byuzuye Pivot Organization</h3>
+                <p class="mt-4 text-bpo-light-blue/80 text-sm">
+                  Restoring individuals with mental health challenges to a life of fullness.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold">Quick Links</h3>
+                <ul class="mt-4 space-y-2">
+                  <li><a href="index.html" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">Home</a></li>
+                  <li><a href="about.html" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">About Us</a></li>
+                  <li><a href="what-we-do.html" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">What We Do</a></li>
+                  <li><a href="blog.html" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">Blog</a></li>
+                  <li><a href="impact.html" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">Impact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold">Contact Us</h3>
+                <ul class="mt-4 space-y-2 text-sm text-bpo-light-blue/80">
+                  <li>KK 15 Rd, Kigali, Rwanda</li>
+                  <li>info@byuzuyepivot.org</li>
+                  <li>+250 788 123 456</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold">Follow Us</h3>
+                <div class="flex space-x-4 mt-4">
+                  <a href="#" class="text-bpo-light-blue/80 hover:text-white transition-colors" aria-label="Facebook">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                  <a href="#" class="text-bpo-light-blue/80 hover:text-white transition-colors" aria-label="Twitter">
+                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                       <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                     </svg>
+                  </a>
+                  <a href="#" class="text-bpo-light-blue/80 hover:text-white transition-colors" aria-label="Instagram">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.802 2.013 10.156 2 12.315 2zm-1.115 6.547a4.425 4.425 0 100 8.85 4.425 4.425 0 000-8.85zm-6.002-1.634a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" clip-rule="evenodd" />
+                      <path d="M12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12 border-t border-bpo-light-blue/20 pt-8 text-center text-sm text-bpo-light-blue/60">
+              <p>&copy; <span id="copyright-year"></span> Byuzuye Pivot Organization. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <!-- Simple JS for Mobile Menu Toggle -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const yearSpan = document.getElementById('copyright-year');
+
+        menuButton.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+        });
+        
+        if(yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
