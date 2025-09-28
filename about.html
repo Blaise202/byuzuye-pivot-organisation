@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="logo/logo.png"
+      rel="icon"
+      type="image/svg+xml"
+    />
+    <title>Byuzuye Pivot Organization | Home</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "bpo-blue": "#103344",
+              "bpo-yellow": "#F5B70D",
+              "bpo-light-blue": "#A9D4E5",
+              "bpo-light-gray": "#F0F4F8",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://rsms.me/inter/inter.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles.css"
+    />
+  </head>
+  <body class="bg-white text-slate-800">
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header
+        id="header"
+        class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm"
+      >
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-20">
+            <a
+              href="index.html"
+              class="flex items-center space-x-2"
+            >
+              <img
+                class="w-8 h-8 text-bpo-blue"
+                alt="BPO Logo"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                src="logo/logo.png"
+              >
+              </img>
+              <span class="font-bold text-xl text-slate-800"
+                >Byuzuye Pivot Organization</span
+              >
+            </a>
+            <nav class="hidden lg:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="font-semibold text-bpo-blue text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                >About Us</a
+              >
+              <a
+                href="what-we-do.html"
+                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                >What We Do</a
+              >
+              <a
+                href="blog.html"
+                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                >Blog</a
+              >
+              <a
+                href="impact.html"
+                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                >Impact</a
+              >
+              <a
+                href="get-involved.html"
+                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                >Get Involved</a
+              >
+              <a
+                href="contact.html"
+                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                >Contact</a
+              >
+            </nav>
+            <div class="hidden lg:block">
+              <a                 href="donate.html"
+                class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow"
+                >Donate</a
+              >
+            </div>
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-slate-600 hover:text-bpo-blue focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="lg:hidden bg-white border-t border-slate-200 hidden"
+        >
+          <div class="px-4 pt-2 pb-4 space-y-2">
+            <a
+              href="index.html"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 bg-bpo-light-blue text-bpo-blue"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
+              >About Us</a
+            >
+            <a
+              href="what-we-do.html"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
+              >What We Do</a
+            >
+            <a
+              href="blog.html"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
+              >Blog</a
+            >
+            <a
+              href="impact.html"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
+              >Impact</a
+            >
+            <a
+              href="get-involved.html"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
+              >Get Involved</a
+            >
+            <a
+              href="contact.html"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
+              >Contact</a
+            >
+            <div class="pt-4">
+              <a
+                href="donate.html"
+                class="w-full inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow"
+                >Donate</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+            <!-- Main Content -->
+      <main class="flex-grow">
+        <!-- Page Header -->
+        <div
+          class="relative bg-bpo-blue py-20 sm:py-24 md:py-32 text-white overflow-hidden"
+        >
+          <img
+            src="https://picsum.photos/seed/header/1600/400"
+            alt="Calm background"
+            class="absolute inset-0 w-full h-full object-cover opacity-20"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-bpo-blue via-bpo-blue/70 to-transparent"
+          ></div>
+          <div
+            class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+          >
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
+            >
+              About Us
+            </h1>
+            <p
+              class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-bpo-light-blue"
+            >
+              Our commitment is to restore individuals to a life of fullness
+              through community and compassionate care.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
