@@ -9,12 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link
-      href="logo/logo.png"
-      rel="icon"
-      type="image/svg+xml"
-    />
-    <title>Byuzuye Pivot Organization | Home</title>
+    <title>Byuzuye Pivot Organization | About Us</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,10 +33,13 @@
       rel="stylesheet"
       href="https://rsms.me/inter/inter.css"
     />
-    <link
-      rel="stylesheet"
-      href="/styles.css"
-    />
+
+    <!-- Custom Styles for Fallbacks -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
   <body class="bg-white text-slate-800">
     <div class="min-h-screen flex flex-col">
@@ -76,12 +74,12 @@
               >
               <a
                 href="about.html"
-                class="font-semibold text-bpo-blue text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
                 >About Us</a
               >
               <a
                 href="what-we-do.html"
-                class="text-slate-600 hover:text-bpo-blue transition-colors duration-300"
+                class="font-semibold text-bpo-blue text-slate-600 hover:text-bpo-blue transition-colors duration-300"
                 >What We Do</a
               >
               <a
@@ -106,7 +104,7 @@
               >
             </nav>
             <div class="hidden lg:block">
-              <a                 href="donate.html"
+              <a href="donate.html"
                 class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow"
                 >Donate</a
               >
@@ -147,12 +145,12 @@
             >
             <a
               href="about.html"
-              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 bg-bpo-light-blue text-bpo-blue"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
               >About Us</a
             >
             <a
               href="what-we-do.html"
-              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue"
+              class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 bg-bpo-light-blue text-bpo-blue"
               >What We Do</a
             >
             <a
@@ -186,164 +184,6 @@
         </div>
       </header>
 
-      <!-- Main Content -->
-      <main class="flex-grow">
-        <!-- Page Header -->
-        <div
-          class="relative bg-bpo-blue py-20 sm:py-24 md:py-32 text-white overflow-hidden"
-        >
-          <img
-            src="images/about/aboutheader.png"
-            alt="Background image of people supporting each other"
-            class="absolute inset-0 w-full h-full object-cover opacity-20"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-bpo-blue via-bpo-blue/70 to-transparent"
-          ></div>
-          <div
-            class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
-          >
-            <h1
-              class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
-            >
-              About Us
-            </h1>
-            <p
-              class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-bpo-light-blue"
-            >
-              Our commitment is to restore individuals to a life of fullness
-              through community and compassionate care.
-            </p>
-          </div>
-        </div>
-
-        
-        <!-- Mission & Vision -->
-        <div class="py-20 sm:py-24">
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-              <div class="order-2 lg:order-1">
-                <h2
-                  class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
-                >
-                  Our Mission & Vision
-                </h2>
-                <p class="mt-6 text-lg text-slate-600">
-                  Byuzuye Pivot Organization (BPO) was founded on the belief
-                  that mental health is a fundamental human right. Our vision is to be a premier hub for comprehensive care for individuals with mental illness and their families in Rwanda and beyond.
-                </p>
-                <p class="mt-4 text-lg text-slate-600">
-                  Our mission is To provide holistic care to people with mental health challenges in Rwanda and beyond through psychiatric services, therapeutic support, rehabilitation and reintegration, community awareness programs and family support alongside proclaiming the gospel of Jesus Christ.
-                </p>
-              </div>
-              <div class="order-1 lg:order-2">
-                <img
-                  src="images/about/president.png"
-                  alt="BPO Team collaborating"
-                  class="rounded-xl shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <!-- Leadership Team -->
-        <div class="bg-bpo-light-gray py-20 sm:py-24">
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-              <h2
-                class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
-              >
-                Meet Our Leadership
-              </h2>
-              <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
-                Our team is composed of passionate and dedicated professionals
-                committed to making a difference.
-              </p>
-            </div>
-
-            <div
-              class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16"
-            >
-              <!-- Team Member 1 -->
-              <div class="text-center">
-                <img
-                  class="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
-                  src="https://picsum.photos/seed/team2/400/400"
-                  alt="ISSA NTAMBARA"
-                />
-                <h3 class="mt-6 text-lg font-semibold text-slate-900">
-                  ISSA NTAMBARA
-                </h3>
-                <p class="text-bpo-green">Founder & Executive Director</p>
-                <p class="mt-2 text-slate-600 text-sm">
-                  Issa founded BPO with a vision to create a world where
-                  mental health is understood and everyone has the support to
-                  live a full life. His leadership is driven by compassion and a
-                  deep commitment to our community.
-                </p>
-              </div>
-              <!-- Team Member 2 -->
-              <div class="text-center">
-                <img
-                  class="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
-                  src="https://picsum.photos/seed/team2/400/400"
-                  alt="Emmanuel Habimana"
-                />
-                <h3 class="mt-6 text-lg font-semibold text-slate-900">
-                  Emmanuel Habimana
-                </h3>
-                <p class="text-bpo-green">Director of Programs</p>
-                <p class="mt-2 text-slate-600 text-sm">
-                  Emmanuel designs and oversees our support programs, ensuring
-                  they are effective, culturally sensitive, and centered on the
-                  needs of our participants. He has over 15 years of experience
-                  in community health.
-                </p>
-              </div>
-              <!-- Team Member 3 -->
-              <div class="text-center">
-                <img
-                  class="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
-                  src="https://picsum.photos/seed/team3/400/400"
-                  alt="Aline Keza"
-                />
-                <h3 class="mt-6 text-lg font-semibold text-slate-900">
-                  Aline Keza
-                </h3>
-                <p class="text-bpo-green">Lead Counselor</p>
-                <p class="mt-2 text-slate-600 text-sm">
-                  Aline provides guidance and support to our counseling team.
-                  Her empathetic approach and clinical expertise are invaluable
-                  in helping individuals navigate their healing journeys.
-                </p>
-              </div>
-              <!-- Team Member 4 -->
-              <div class="text-center">
-                <img
-                  class="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
-                  src="https://picsum.photos/seed/team4/400/400"
-                  alt="David Mugisha"
-                />
-                <h3 class="mt-6 text-lg font-semibold text-slate-900">
-                  David Mugisha
-                </h3>
-                <p class="text-bpo-green">Community Outreach Coordinator</p>
-                <p class="mt-2 text-slate-600 text-sm">
-                  David is the bridge between BPO and the communities we serve.
-                  He works tirelessly to raise awareness, build partnerships,
-                  and ensure our services are accessible to those who need them
-                  most.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </main>
-
-      
       <!-- Footer -->
       <footer class="bg-bpo-blue text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -501,7 +341,6 @@
           </div>
         </div>
       </footer>
-
     </div>
     <script src="scripts.js"></script>
   </body>
