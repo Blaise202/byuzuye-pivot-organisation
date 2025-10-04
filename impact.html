@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="logo/logo.png" rel="icon" type="image/svg+xml" />
+  <title>Byuzuye Pivot Organization | Home</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "bpo-blue": "#103344",
+            "bpo-yellow": "#F5B70D",
+            "bpo-light-blue": "#A9D4E5",
+            "bpo-light-gray": "#F0F4F8",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-white text-slate-800">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="index" class="flex items-center space-x-2">
+            <img class="w-12 h-12 text-bpo-blue" alt="BPO Logo" stroke="currentColor" viewBox="0 0 24 24"
+             src="logo/logo.png">
+            </img>
+            <span class="font-bold text-xl text-slate-800">Byuzuye Pivot Organization</span>
+          </a>
+          <nav class="hidden lg:flex items-center space-x-8">
+            <a href="index" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Home</a>
+            <a href="about" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">About Us</a>
+            <a href="what-we-do" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">
+              What We Do</a>
+            <a href="blog" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Blog</a>
+            <a href="impact"
+             class="font-semibold text-bpo-blue text-slate-600 hover:text-bpo-blue transition-colors duration-300">Impact</a>
+            <a href="get-involved" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">
+              Get Involved</a>
+            <a href="contact" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Contact</a>
+          </nav>
+          <div class="hidden lg:block">
+            <a href="donate"
+             class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90o fcus:ring-bpo-yellow">Donate</a>
+          </div>
+          <div class="lg:hidden">
+            <button id="mobile-menu-button" class="text-slate-600 hover:text-bpo-blue focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden bg-white border-t border-slate-200 hidden">
+        <div class="px-4 pt-2 pb-4 space-y-2">
+          <a href="index"
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Home</a>
+          <a href="about"
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">
+            About Us</a>
+          <a href="what-we-do"
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">
+            What We Do</a>
+          <a href="blog"
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Blog</a>
+          <a href="impact"
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 bg-bpo-light-blue text-bpo-blue">Impact</a>
+          <a href="get-involved"
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Get
+            Involved</a>
+          <a href="contact"
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Contact</a>
+          <div class="pt-4">
+            <a href="donate"
+             class="w-full inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow">Donate</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Page Header -->
+      <div class="relative bg-bpo-blue py-20 sm:py-24 md:py-32 text-white overflow-hidden">
+        <img src="https://picsum.photos/seed/header/1600/400" alt="Calm background"
+         class="absolute inset-0 w-full h-full object-cover opacity-80" />
+        <div class="absolute inset-0 bg-gradient-to-t from-bpo-blue via-bpo-blue/70 to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">Our Impact</h1>
+          <p class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-bpo-light-blue">Transparency and accountability are
+            at the core of our work. See the difference your support makes.</p>
+        </div>
+      </div>
+
+
+      <!-- Stats Section -->
+      <div class="py-20 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Measuring What Matters</h2>
+            <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+              We are committed to creating lasting change. Our impact is measured not just in numbers, but in the
+              stories of renewed hope and transformed lives within our community.
+            </p>
+          </div>
+          <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center bg-bpo-light-gray p-10 rounded-xl">
+            <div class="flex flex-col">
+              <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">20</span>
+              <span class="mt-2 text-base text-slate-600">Families Supported</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">45+</span>
+              <span class="mt-2 text-base text-slate-600">Individuals Reached</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">55</span>
+              <span class="mt-2 text-base text-slate-600">Volunteers Engaged</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-4xl sm:text-5xl font-bold text-bpo-blue">50</span>
+              <span class="mt-2 text-base text-slate-600">Home Visits Conducted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-bpo-blue text-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 class="font-bold text-lg">Byuzuye Pivot Organization</h3>
+            <p class="mt-4 text-bpo-light-blue/80 text-sm">
+              Restoring individuals with mental health challenges to a life of fullness.
+            </p>
+            <p class="mt-5">25WQ+2VH, Kigali, Rwanda</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Quick Links</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="index" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">Home</a>
+              </li>
+              <li>
+                <a href="about" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm"> About Us</a>
+              </li>
+              <li>
+                <a href="what-we-do" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">
+                  What We Do</a>
+              </li>
+              <li>
+                <a href="blog" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">Blog</a>
+              </li>
+              <li>
+                <a href="impact" class="text-bpo-light-blue/80 hover:text-white transition-colors text-sm">Impact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">Contact Us</h3>
+            <ul class="mt-4 space-y-2 text-sm text-bpo-light-blue/80">
+              <li>
+                <a href="mailto:byuzuyepivot@gmail.com" class="hover:text-white">byuzuyepivot@gmail.com</a>
+              </li>
+              <li>
+                <a href="mailto:issa.ntambara@byuzuye-pivot.org"
+                 class="hover:text-white">issa.ntambara@byuzuye-pivot.org</a>
+              </li>
+              <li>+250 788 749 315</li>
+              <li>+250 795 454 050</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">Follow Us</h3>
+            <div class="flex space-x-4 mt-4">
+              <a href="https://www.facebook.com/p/Byuzuye-Pivot-Organization-BPO-61566562044828/"
+               class="text-bpo-light-blue/80 hover:text-white transition-colors" aria-label="Facebook" target="_blank">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                   d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                   clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UC-EsKFBJNJORRF8ALZ-BmlA"
+               class="text-bpo-light-blue/80 hover:text-white transition-colors" aria-label="YouTube" target="_blank">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                   d="M23.498 6.186a2.971 2.971 0 0 0-2.09-2.103C19.691 3.5 12 3.5 12 3.5s-7.691 0-9.408.583a2.971 2.971 0 0 0-2.09 2.103C0 7.924 0 12 0 12s0 4.076.502 5.814a2.971 2.971 0 0 0 2.09 2.103C4.309 20.5 12 20.5 12 20.5s7.691 0 9.408-.583a2.971 2.971 0 0 0 2.09-2.103C24 16.076 24 12 24 12s0-4.076-.502-5.814ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"
+                   clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="https://x.com/ByuzuyePivotOrg" target="_blank"
+               class="text-bpo-light-blue/80 hover:text-white transition-colors" aria-label="Twitter">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                   d="M18.244 2.25h3.308l-7.227 8.26 8.5 11.24H16.27l-5.214-6.82-5.963 6.82H1.785l7.73-8.846-8.192-10.654H7.73l4.713 6.238 5.8-6.238Zm-2.09 17.28h1.833L7.94 4.74H6.03l10.124 14.79Z"
+                   clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/byuzuyepivotorganization" target="_blank"
+               class="text-bpo-light-blue/80 hover:text-white transition-colors" aria-label="Instagram">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                   d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.802 2.013 10.156 2 12.315 2zm-1.115 6.547a4.425 4.425 0 100 8.85 4.425 4.425 0 000-8.85zm-6.002-1.634a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"
+                   clip-rule="evenodd" />
+                  <path d="M12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-bpo-light-blue/20 pt-8 text-center text-sm text-bpo-light-blue/60">
+          <p>
+            &copy; <span id="copyright-year"></span> Byuzuye Pivot
+            Organization. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
