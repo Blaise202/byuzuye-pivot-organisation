@@ -56,7 +56,7 @@
           </nav>
           <div class="hidden lg:block">
             <a href="donate"
-             class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90o fcus:ring-bpo-yellow">Donate</a>
+             class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow">Donate</a>
           </div>
           <div class="lg:hidden">
             <button id="mobile-menu-button" class="text-slate-600 hover:text-bpo-blue focus:outline-none">
@@ -96,6 +96,83 @@
         </div>
       </div>
     </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Page Header -->
+      <div class="relative bg-bpo-blue py-20 sm:py-24 md:py-32 text-white overflow-hidden">
+        <img src="images/contact/contact.png" alt="Calm background"
+         class="absolute inset-0 w-full h-full object-cover opacity-30" />
+        <div class="absolute inset-0 bg-gradient-to-t from-bpo-blue via-bpo-blue/70 to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">Contact Us</h1>
+          <p class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-bpo-light-blue">We'd love to hear from you. Whether
+            you have a question, need support, or want to partner with us, get in touch.</p>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="py-20 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-16">
+            <div>
+              <h2 class="text-3xl font-bold text-slate-900">Send Us a Message</h2>
+              <form action="#" method="POST" class="mt-8 space-y-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
+                  <input type="text" name="name" id="name" required
+                   class="mt-1 block w-full border border-slate-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-bpo-green focus:border-bpo-green sm:text-sm" />
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                  <input type="email" name="email" id="email" required
+                   class="mt-1 block w-full border border-slate-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-bpo-green focus:border-bpo-green sm:text-sm" />
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                  <textarea id="message" name="message" rows="4" required
+                   class="mt-1 block w-full border border-slate-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-bpo-green focus:border-bpo-green sm:text-sm"></textarea>
+                </div>
+                <div>
+                  <button type="submit"
+                   class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow">Send
+                    Message</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="mt-10 lg:mt-0">
+              <h2 class="text-3xl font-bold text-slate-900">Our Office</h2>
+              <div class="mt-8 text-slate-600 space-y-4">
+                <p>
+                  <strong>Address:</strong><br />
+                  Byuzuye Pivot Organization<br />
+                  KK 15 Rd, Kigali, Rwanda
+                </p>
+                <p>
+                  <strong>Email:</strong><br />
+                  <a href="mailto:byuzuyepivot@gmail.com" class="text-bpo-blue hover:underline">
+                    byuzuyepivot@gmail.com</a>
+                </p>
+                <p>
+                  <strong>Phone:</strong><br />
+                  <a href="tel:+250788749315" class="text-bpo-blue hover:underline">+250 788 749 315</a>
+                </p>
+              </div>
+              <div class="mt-8">
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-md bg-slate-200">
+                  <iframe
+                   src="https://maps.google.com/maps?q=25WQ%2B2VH%2C%20Kigali%20byuzuye%20pivot%20organisation%20&#038;t=m&#038;z=16&#038;output=embed&#038;iwloc=near"
+                   width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"
+                   referrerpolicy="no-referrer-when-downgrade" title="BPO Office Location"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer class="bg-bpo-blue text-white">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
