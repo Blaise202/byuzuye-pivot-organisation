@@ -49,8 +49,7 @@
               What We Do</a>
             <a href="blog" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Blog</a>
             <a href="impact" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Impact</a>
-            <a href="get-involved"
-             class="font-semibold text-bpo-blue text-slate-600 hover:text-bpo-blue transition-colors duration-300">
+            <a href="get-involved" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">
               Get Involved</a>
             <a href="contact" class="text-slate-600 hover:text-bpo-blue transition-colors duration-300">Contact</a>
           </nav>
@@ -85,8 +84,8 @@
           <a href="impact"
            class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Impact</a>
           <a href="get-involved"
-           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 bg-bpo-light-blue text-bpo-blue">
-            Get Involved</a>
+           class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Get
+            Involved</a>
           <a href="contact"
            class="block py-2 px-3 rounded-md text-base font-medium transition-colors duration-300 text-slate-600 hover:bg-slate-100 hover:text-bpo-blue">Contact</a>
           <div class="pt-4">
@@ -99,79 +98,124 @@
 
     <!-- Main Content -->
     <main class="flex-grow">
-      <!-- Page Header -->
       <div class="relative bg-bpo-blue py-20 sm:py-24 md:py-32 text-white overflow-hidden">
-        <img src="images/involve/header.png" alt="Calm background"
+        <img src="images/donate/donate.png" alt="Donate Image"
          class="absolute inset-0 w-full h-full object-cover opacity-80" />
         <div class="absolute inset-0 bg-gradient-to-t from-bpo-blue via-bpo-blue/70 to-transparent"></div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">Get Involved</h1>
-          <p class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-bpo-light-blue">You have the power to make a
-            difference. Join us in our mission to bring hope and healing to our community.</p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">Support Our Mission</h1>
+          <p class="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-bpo-light-blue">Your generosity fuels our work and
+            brings hope to individuals and families across Rwanda.</p>
         </div>
       </div>
 
-      <!-- Involvement Options -->
+
+      <!-- Donation Form -->
       <div class="py-20 sm:py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid lg:grid-cols-3 gap-8">
-            <div class="bg-bpo-light-gray p-8 rounded-xl text-center flex flex-col">
-              <h3 class="text-2xl font-bold text-bpo-blue">Training Volunteers</h3>
-              <p class="mt-4 text-slate-600 flex-grow">
-                Help us equip volunteers with knowledge and skills to serve as compassionate advocates within the
-                community.
-              </p>
-              <div class="mt-6">
-                <a href="contact"
-                 class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-blue text-white hover:bg-bpo-blue/90 focus:ring-bpo-blue">
-                  See Volunteer Roles</a>
+          <div class="grid lg:grid-cols-2 gap-16">
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+              <h3 class="text-2xl font-bold text-slate-800 mb-6">Make a Secure Donation</h3>
+
+              <div class="mb-3">
+                <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
+                <input id="name" name="name" type="text" required class="w-full border rounded-md px-3 py-2" />
               </div>
+
+              <div class="mb-3">
+                <label for="email" class="block text-sm font-medium text-slate-700">Email address</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com"
+                 class="w-full border rounded-md px-3 py-2" />
+              </div>
+
+              <div class="grid grid-cols-2 gap-4 mb-6" id="donation-type-selector">
+                <button data-type="one-time"
+                 class="donation-type-btn py-3 px-4 rounded-lg font-semibold transition-colors bg-bpo-yellow text-white">
+                  One-Time
+                </button>
+                <button data-type="monthly"
+                 class="donation-type-btn py-3 px-4 rounded-lg font-semibold transition-colors bg-slate-100 text-slate-700 hover:bg-slate-200">
+                  Monthly
+                </button>
+              </div>
+
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6" id="donation-amount-selector">
+                <button data-amount="25"
+                 class="donation-amount-btn py-3 px-4 rounded-lg font-semibold border-2 transition-colors border-slate-200 text-slate-700 hover:border-bpo-yellow/50">
+                  $25
+                </button>
+                <button data-amount="50"
+                 class="donation-amount-btn py-3 px-4 rounded-lg font-semibold border-2 transition-colors bg-bpo-yellow/10 border-bpo-yellow text-bpo-yellow">
+                  $50
+                </button>
+                <button data-amount="100"
+                 class="donation-amount-btn py-3 px-4 rounded-lg font-semibold border-2 transition-colors border-slate-200 text-slate-700 hover:border-bpo-yellow/50">
+                  $100
+                </button>
+                <button data-amount="250"
+                 class="donation-amount-btn py-3 px-4 rounded-lg font-semibold border-2 transition-colors border-slate-200 text-slate-700 hover:border-bpo-yellow/50">
+                  $250
+                </button>
+              </div>
+
+              <div>
+                <label for="custom-amount" class="block text-sm font-medium text-slate-700">Or enter a custom
+                  amount</label>
+                <div class="mt-1 relative rounded-md shadow-sm">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <span class="text-slate-500 sm:text-sm">$</span>
+                  </div>
+                  <input type="number" min="1" name="custom-amount" id="custom-amount-input"
+                   class="focus:ring-bpo-yellow focus:border-bpo-yellow block w-full pl-7 pr-12 sm:text-sm border-slate-300 rounded-md py-3"
+                   placeholder="0.00" />
+                  <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                    <span class="text-slate-500 sm:text-sm">USD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <button type="submit"
+                 class="w-full inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow">
+                  Get Donation Email
+                </button>
+                <p class="text-xs text-slate-500 mt-4 text-center">
+                  You will receive an email to guide you on how to complete your donation.
+                </p>
+              </div>
+
             </div>
-            <div class="bg-bpo-light-gray p-8 rounded-xl text-center flex flex-col">
-              <h3 class="text-2xl font-bold text-bpo-blue">Becoming Stakeholders</h3>
-              <p class="mt-4 text-slate-600 flex-grow">
-                Join hands with us as long-term partners or stakeholders, investing in mental health awareness, healing
-                programs, and sustainable support systems.
+
+            <div class="mt-10 lg:mt-0">
+              <h2 class="text-3xl font-bold text-slate-900">How Your Donation Helps</h2>
+              <p class="mt-4 text-lg text-slate-600">
+                Every contribution, no matter the size, has a direct and meaningful impact on the lives of those we
+                serve. Your gift helps us provide essential services and create a community of support and healing.
               </p>
-              <div class="mt-6">
-                <a href="contact"
-                 class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-blue text-white hover:bg-bpo-blue/90 focus:ring-bpo-blue">Become
-                  a Partner</a>
-              </div>
-            </div>
-            <div class="bg-bpo-light-gray p-8 rounded-xl text-center flex flex-col">
-              <h3 class="text-2xl font-bold text-bpo-blue">Joining Our Programs</h3>
-              <p class="mt-4 text-slate-600 flex-grow">
-                Collaborate with us in our ongoing initiatives from awareness campaigns to social support projects and
-                make a direct impact on the lives of vulnerable families.
-              </p>
-              <div class="mt-6">
-                <a href="#footer"
-                 class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-blue text-white hover:bg-bpo-blue/90 focus:ring-bpo-blue">Follow
-                  Us</a>
-              </div>
+              <ul class="mt-8 space-y-4 text-slate-600">
+                <li class="flex items-start">
+                  <span class="text-bpo-yellow font-bold text-xl mr-4">&#x2713;</span>
+                  <p><span class="font-semibold">$25</span> can provide vital educational materials for one of our
+                    community mental health workshops.</p>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-bpo-yellow font-bold text-xl mr-4">&#x2713;</span>
+                  <p><span class="font-semibold">$50</span> can sponsor an individual's participation in a peer support
+                    group for one month.</p>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-bpo-yellow font-bold text-xl mr-4">&#x2713;</span>
+                  <p><span class="font-semibold">$100</span> can fund a confidential one-on-one counseling session with
+                    a trained professional.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Donate CTA -->
-      <div class="bg-white py-20 sm:py-24">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Ready to Change a Life?</h2>
-          <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
-            Your contribution, no matter the size, helps provide essential mental health services to those in need.
-          </p>
-          <div class="mt-8">
-            <a href="donate"
-             class="inline-block text-center font-semibold rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 px-6 py-3 text-base bg-bpo-yellow text-white hover:bg-bpo-yellow/90 focus:ring-bpo-yellow">
-              Donate Now</a>
-          </div>
-        </div>
-      </div>
-
     </main>
 
+    <!-- Footer -->
     <footer class="bg-bpo-blue text-white">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -265,6 +309,19 @@
       </div>
     </footer>
   </div>
+  <script>
+    const wrapper = document.getElementById("blogWrapper");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    prevBtn.addEventListener("click", () => {
+      wrapper.scrollBy({ left: -wrapper.clientWidth, behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      wrapper.scrollBy({ left: wrapper.clientWidth, behavior: "smooth" });
+    });
+  </script>
   <script src="scripts.js"></script>
 </body>
 
